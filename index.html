@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Virtual desk</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <h1>Willkommen zu Ihrem virtuellen Schreibtisch</h1>
+    </header>
+    <main>
+      <!-- Chaotischer Bereich -->
+      <section id="desk">
+        <h2>Chaos-Bereich</h2>
+        <div class="icon" draggable="true" id="file1">Datei 1</div>
+        <div class="icon" draggable="true" id="file2">Datei 2</div>
+        <div class="icon" draggable="true" id="folder1">Ordner 1</div>
+        <div class="icon" draggable="true" id="note1">Notiz A</div>
+        <div class="icon" draggable="true" id="note2">Notiz B</div>
+      </section>
+
+      <!-- Kategorien / Ordnung -->
+      <section id="categories">
+        <h2>Ordnung schaffen</h2>
+        <div class="category" id="work">Arbeit</div>
+        <div class="category" id="private">Privat</div>
+        <div class="category" id="ideas">Ideen</div>
+        <div class="category" id="misc">Sonstiges</div>
+      </section>
+
+      <!-- Fortschritt -->
+      <section id="progress">
+        <p>
+          Sortiert: <span id="sortedCount">0</span> /
+          <span id="totalCount">0</span>
+        </p>
+        <p>Punkte: <span id="score">0</span></p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 Virtueller Schreibtisch</p>
+    </footer>
+  </body>
 </html>
